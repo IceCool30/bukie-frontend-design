@@ -1,0 +1,56 @@
+{
+  "slug": "bukie-frontend-design",
+  "display_name": "Frontend Design",
+  "tagline": "Turn a vague UI ask into a concrete frontend spec, design tokens, and a Figma export schema",
+  "description": "Frontend Design takes a one-line feature ask plus a brand reference and produces a paste-ready design spec, a W3C-shaped design-tokens JSON, and a Figma frame schema a designer can bulk-create. It nails down the component breakdown, states, and accessibility notes before a single line of UI code gets written. Use it when an engineer is staring at a blank Tailwind file or a designer needs a structured handoff.",
+  "publisher": "BUKIE DIGITAL SOLUTIONS",
+  "version": "v1.0",
+  "icon": "icon.png",
+  "category": "engineering",
+
+  "capability_steps": [
+    "Drafts a design-spec.md with layout, components, states, and a11y notes",
+    "Generates a tokens.json with HSL color ramps, spacing, radius, and typography",
+    "Emits a Figma frame schema for bulk-creating component states",
+    "Calls out missing states (loading, empty, error) before code is written",
+    "References WCAG 2.2 for focus order, ARIA roles, and contrast checks"
+  ],
+
+  "trigger_phrases": [
+    "design a frontend spec",
+    "build a UI spec for this feature",
+    "scaffold design tokens from our brand",
+    "draft a checkout page spec",
+    "generate a Figma frame schema"
+  ],
+
+  "try_phrases": [
+    "I need a spec for a billing settings page in React + Tailwind",
+    "draft a frontend spec for a checkout flow, brand color is #3B82F6 and font is Inter",
+    "build tokens.json from our brand and a Figma schema I can hand to design"
+  ],
+
+  "outputs": [
+    {
+      "kind": "file",
+      "name": "Design spec markdown",
+      "location": "Saved to ./design-spec.md"
+    },
+    {
+      "kind": "file",
+      "name": "Design tokens JSON",
+      "location": "Saved to ./tokens.json"
+    },
+    {
+      "kind": "file",
+      "name": "Figma frame schema",
+      "location": "Saved to ./figma-schema.json"
+    }
+  ],
+
+  "permissions": [
+    "Read & write files in your workspace",
+    "Read a brand-reference JSON you supply",
+    "Call connected models (no third-party share)"
+  ]
+}
